@@ -9,6 +9,13 @@ checkLogged();
 
 document.getElementById("logout-button").addEventListener("click", logout);
 
+function logout() {
+    sessionStorage.removeItem("logged");
+    localStorage.remove.item("session");
+    
+    window.location.href = "index.html;"
+}
+
 //ADICIONAR LANCAMENTO
 document.getElementById("transaction-form").addEventListener('submit', function(e) {
     e.preventDefault();
